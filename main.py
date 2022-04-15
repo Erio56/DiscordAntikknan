@@ -9,27 +9,19 @@ intents.messages = True
 miguel = "日日南Breast Apostle"
 aiz = "Kurisu-tina / 日日南BreastNoble"
 
-knanPJ = "日南"
-knan = "Canan"
-
-kknanPj = "日日南"
-kknan = "Cacanan"
-
 aizDesbasado = "Kurisu-tina / 日南BreastNoble"
 miguelDesbasado = "日南Breast Apostle"
 
 bot = discord.Client(intents=intents)
 @bot.event
 async def on_member_update(before, after):
-    if(after.nick in knan):
-        temp2 = after.nick.replace(knan,kknan)
+    if(after.nick == aizDesbasado ):
         time.sleep(3)
-        await after.edit(nick= temp2)
+        await after.edit(nick= aiz)
 
-    if(after.nick in kknanPj):
-        temp =  after.nick.replace(knanPJ, kknanPj)
-        time.sleep(3)   
-        await after.edit(nick= temp)
+    if(after.nick == miguelDesbasado):
+        time.sleep(3)
+        await after.edit(nick= miguel)
 
 
 
