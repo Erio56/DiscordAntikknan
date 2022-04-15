@@ -1,12 +1,13 @@
 import os
 import discord
 import time
-my_secret = os.environ['TOKEN']
+#my_secret = os.environ['TOKEN']
 intents = discord.Intents.default()
 intents.members = True
 intents.messages = True
+token = "OTY0MzE4NjE4NzIyNjQ0MDIw.Yli5sg.ExetzyatSgmnqOZYxBRAbZUxHFA"
 
-listaDesbasadaM = ["日南Breast Apostle", "Kurisu-tina / 日 南BreastNoble"]
+listaDesbasadaM = ["日南Breast Apostle","日 南Breast Apostle" ]
 ListaDesbasadaA = ["Kurisu-tina / 日南BreastNoble", "Kurisu-tina / 日 南BreastNoble",]
 
 miguel = "日日南Breast Apostle"
@@ -28,4 +29,4 @@ async def on_member_update(before, after):
             await after.edit(nick= miguel)
 
 
-bot.run(my_secret)
+bot.run(token)
