@@ -9,11 +9,11 @@ intents.messages = True
 miguel = "日日南Breast Apostle"
 aiz = "Kurisu-tina / 日日南BreastNoble"
 
-knanPJ = 日南
-knan = Canan
+knanPJ = "日南"
+knan = "Canan"
 
-kknanPj = 日日南
-kknan = Cacanan
+kknanPj = "日日南"
+kknan = "Cacanan"
 
 aizDesbasado = "Kurisu-tina / 日南BreastNoble"
 miguelDesbasado = "日南Breast Apostle"
@@ -26,7 +26,7 @@ async def on_member_update(before, after):
         time.sleep(3)
         await after.edit(nick= temp2)
 
-    if(after.nick in kknanPJ):
+    if(after.nick in kknanPj):
         temp =  after.nick.replace(knanPJ, kknanPj)
         time.sleep(3)   
         await after.edit(nick= temp)
