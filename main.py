@@ -27,7 +27,7 @@ async def on_member_update(before, after):
         await after.edit(nick= temp2)
 
     if(after.nick in kknanPJ):
-        temp =  after.nick.replace(knanPJ, kknanPJ)
+        temp =  after.nick.replace(knanPJ, kknanPj)
         time.sleep(3)   
         await after.edit(nick= temp)
 
