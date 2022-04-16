@@ -6,7 +6,7 @@ intents = discord.Intents.default()
 intents.members = True
 intents.messages = True
 
-listaDesbasadaM = ["日南Breast Apostle","日 南Breast Apostle" ]
+listaDesbasadaM = ["日南BreastApostle","日 南Breast Apostle" ]
 ListaDesbasadaA = ["Kurisu-tina/日南BreastNoble", "Kurisu-tina / 日 南BreastNoble",]
 
 miguel = "日日南Breast Apostle"
