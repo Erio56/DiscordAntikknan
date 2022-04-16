@@ -1,6 +1,7 @@
 import os
 import discord
 import time
+import string
 my_secret = os.environ['TOKEN']
 intents = discord.Intents.default()
 intents.members = True
@@ -19,17 +20,16 @@ bot = discord.Client(intents=intents)
 @bot.event
 async def on_member_update(before, after):
     temp = after.nick
-    trimed = temp.replace(' ', '')
-    trimed = temp.replace("'", '')
+    trimed = temp.translate(str.maketrans("", "",string.whitespace))
+    trimed = trimed.translate(str.maketrans("", "","'"))
+    trimed = trimed.translate(str.maketrans("", "",'*'))
     print(trimed)
     for i in range (len(ListaDesbasadaA)):
         if(trimed == ListaDesbasadaA[i]):
-            time.sleep(3)
             print(ListaDesbasadaA[i])
             await after.edit(nick= aiz)
     for e in range(len(listaDesbasadaM)):
         if(trimed == listaDesbasadaM[e]):
-            time.sleep(3)
             print(listaDesbasadaM[e])
             await after.edit(nick= miguel)
 
