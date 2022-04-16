@@ -28,10 +28,12 @@ async def on_member_update(before, after):
     #miguel
 
     if(after.id == 219659069244309505):
-        await after.edit(nick= miguel)
+        if(after.nick != miguel):
+            await after.edit(nick= miguel)
     #aiz
     if(after.id == 321036956589096960):
-        await after.edit(nick= aiz)
+        if(after.nick != aiz):
+            await after.edit(nick= aiz)
 
 
 bot.run(my_secret)
