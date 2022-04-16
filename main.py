@@ -26,8 +26,8 @@ async def on_member_update(before, after):
     #print(trimed)
 
     #miguel
-    
-    if(after.id == 219659069244309505)
+
+    if(after.id == 219659069244309505):
         await after.edit(nick= miguel)
     #aiz
     if(trimed == 321036956589096960):
