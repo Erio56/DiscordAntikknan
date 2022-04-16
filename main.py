@@ -2,8 +2,7 @@ import os
 import discord
 import time
 import string
-#my_secret = os.environ['TOKEN']
-token = "OTY0MzE4NjE4NzIyNjQ0MDIw.Yli5sg.6v0IFFrLsdNmioyiM-pIvFmkM9Q"
+my_secret = os.environ['TOKEN']
 intents = discord.Intents.default()
 intents.members = True
 intents.messages = True
@@ -25,12 +24,14 @@ async def on_member_update(before, after):
     #trimed = trimed.translate(str.maketrans("", "","'"))
     #trimed = trimed.translate(str.maketrans("", "",'*'))
     #print(trimed)
-    print(after.id)
-    #if(after.id == bot)
-    #    await after.edit(nick= aiz)
 
-    #if(trimed != miguel):
-    #    await after.edit(nick= miguel)
+    #miguel
+    
+    if(after.id == 219659069244309505)
+        await after.edit(nick= miguel)
+    #aiz
+    if(trimed == 321036956589096960):
+        await after.edit(nick= aiz)
 
 
-bot.run(token)
+bot.run(my_secret)
