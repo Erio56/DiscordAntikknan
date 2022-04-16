@@ -22,7 +22,6 @@ async def on_member_update(before, after):
     trimed = temp.replace(' ', '')
     print(trimed)
     for i in range (len(ListaDesbasadaA)):
-        
         if(trimed == ListaDesbasadaA[i]):
             time.sleep(3)
             print(ListaDesbasadaA[i])
@@ -30,7 +29,7 @@ async def on_member_update(before, after):
     for e in range(len(listaDesbasadaM)):
         if(trimed == listaDesbasadaM[e]):
             time.sleep(3)
-            print(ListaDesbasadaA[e])
+            print(listaDesbasadaM[e])
             await after.edit(nick= miguel)
 
 
