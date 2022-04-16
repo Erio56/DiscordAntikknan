@@ -11,7 +11,7 @@ listaDesbasadaM = ["日南BreastApostle","日 南Breast Apostle", "日'南Breast
 ListaDesbasadaA = ["Kurisu-tina/日南BreastNoble", "Kurisu-tina / 日 南BreastNoble"]
 
 miguel = "日日南Breast Apostle"
-aiz = "Kurisu-tina / 日日南BreastNoble"
+aiz = "Kurisu-tina / KK南BreastNoble"
 
 #aizDesbasado = "Kurisu-tina / 日南BreastNoble"
 #miguelDesbasado = "日南Breast Apostle"
