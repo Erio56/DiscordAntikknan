@@ -5,9 +5,9 @@ my_secret = os.environ['TOKEN']
 intents = discord.Intents.default()
 intents.members = True
 intents.messages = True
-
-listaDesbasadaM = ["日南BreastApostle","日 南Breast Apostle", "日'南BreastApostle" ]
-ListaDesbasadaA = ["Kurisu-tina/日南BreastNoble", "Kurisu-tina / 日 南BreastNoble",]
+/
+listaDesbasadaM = ["日南BreastApostle","日 南Breast Apostle", "日'南BreastApostle", "日-南BreastApostle" ]
+ListaDesbasadaA = ["Kurisu-tina/日南BreastNoble", "Kurisu-tina / 日 南BreastNoble"]
 
 miguel = "日日南Breast Apostle"
 aiz = "Kurisu-tina / 日日南BreastNoble"
