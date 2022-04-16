@@ -5,7 +5,7 @@ my_secret = os.environ['TOKEN']
 intents = discord.Intents.default()
 intents.members = True
 intents.messages = True
-/
+
 listaDesbasadaM = ["日南BreastApostle","日 南Breast Apostle", "日'南BreastApostle", "日-南BreastApostle" ]
 ListaDesbasadaA = ["Kurisu-tina/日南BreastNoble", "Kurisu-tina / 日 南BreastNoble"]
 
@@ -18,10 +18,11 @@ aiz = "Kurisu-tina / 日日南BreastNoble"
 bot = discord.Client(intents=intents)
 @bot.event
 async def on_member_update(before, after):
+    temp = after.nick
+    trimed = temp.replace(' ', '')
+    print(trimed)
     for i in range (len(ListaDesbasadaA)):
-        temp = after.nick
-        trimed = temp.replace(' ', '')
-        print(trimed)
+        
         if(trimed == ListaDesbasadaA[i]):
             time.sleep(3)
             print(ListaDesbasadaA[i])
