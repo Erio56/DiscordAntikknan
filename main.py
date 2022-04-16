@@ -19,13 +19,17 @@ bot = discord.Client(intents=intents)
 @bot.event
 async def on_member_update(before, after):
     for i in range (len(ListaDesbasadaA)):
-        trimed = after.nick.trim(' ')
+        temp = after.nick
+        trimed = temp.replace(' ', '')
+        print(trimed)
         if(trimed == ListaDesbasadaA[i]):
             time.sleep(3)
+            print(ListaDesbasadaA[i])
             await after.edit(nick= aiz)
     for e in range(len(listaDesbasadaM)):
         if(trimed == listaDesbasadaM[e]):
             time.sleep(3)
+            print(ListaDesbasadaA[e])
             await after.edit(nick= miguel)
 
 
